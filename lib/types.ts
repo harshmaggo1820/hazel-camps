@@ -1,3 +1,23 @@
+export interface Review {
+  id: number;
+  userName: string;
+  rating: number;
+  comment: string;
+  date: string;
+}
+
+export interface AgeRange {
+  min: number;
+  max: number;
+}
+
+export interface Pricing {
+  basePrice: number;
+  discountedPrice?: number;
+  currency: string;
+  paymentPlan?: string;
+}
+
 export interface Camp {
   id: number;
   name: string;
@@ -12,6 +32,9 @@ export interface Camp {
   enrolled: number;
   imageUrl?: string;
   featured: boolean;
+  reviews?: Review[];
+  ageRange: AgeRange;
+  pricing: Pricing;
 }
 
 export interface FilterOptions {
