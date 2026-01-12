@@ -14,6 +14,12 @@ export const mockCamps: Camp[] = [
     capacity: 50,
     enrolled: 45,
     featured: true,
+    ageRange: { min: 8, max: 14 },
+    pricing: { basePrice: 899, currency: 'USD', discountedPrice: 799, paymentPlan: 'Weekly' },
+    reviews: [
+      { id: 1, userName: 'John D.', rating: 5, comment: 'Amazing experience for my son!', date: '2024-06-23' },
+      { id: 2, userName: 'Sarah M.', rating: 4, comment: 'Great activities and good instructors.', date: '2024-06-24' }
+    ]
   },
   {
     id: 2,
@@ -28,6 +34,12 @@ export const mockCamps: Camp[] = [
     capacity: 40,
     enrolled: 38,
     featured: true,
+    ageRange: { min: 10, max: 17 },
+    pricing: { basePrice: 1299, currency: 'USD', discountedPrice: 1099, paymentPlan: 'Bi-Weekly' },
+    reviews: [
+      { id: 1, userName: 'Mike T.', rating: 5, comment: 'Best tech camp ever!', date: '2024-07-16' },
+      { id: 2, userName: 'Emma S.', rating: 5, comment: 'My daughter loved learning coding here.', date: '2024-07-16' }
+    ]
   },
   {
     id: 3,
@@ -37,14 +49,17 @@ export const mockCamps: Camp[] = [
     location: 'Downtown Atlanta',
     activities: ['Painting', 'Music', 'Sculpture', 'Digital Art'],
     price: 799,
-    startDate: '2024-06-24',
-    endDate: '2024-07-08',
+    startDate: '2024-06-10',
+    endDate: '2024-06-24',
     capacity: 35,
     enrolled: 32,
     featured: false,
-  },
+    ageRange: { min: 6, max: 13 },
+    pricing: { basePrice: 799, currency: 'USD', discountedPrice: 699, paymentPlan: 'Weekly' },
+    reviews: [
+      { id: 1, userName: 'Lisa A.', rating: 4, comment: 'Great art instructors and facilities.', date: '2024-06-25' }
+    ]
+  }
 ];
 
-export const locations = ['Atlanta', 'Peachtree', 'Downtown Atlanta', 'Marietta', 'Sandy Springs'];
-export const ageGroups = ['6-8', '8-10', '10-13', '13-17'];
-export const activities = ['Hiking', 'Coding', 'Music', 'Art', 'Sports', 'Drama', 'Science', 'Robotics'];
+export const camps = mockCamps;
