@@ -63,3 +63,7 @@ export const mockCamps: Camp[] = [
 ];
 
 export const camps = mockCamps;
+
+export const locations = ['Atlanta', 'Peachtree', 'Downtown Atlanta'];
+
+export const ageGroups = ['6-13', '8-14', '10-17', '6-18'];
